@@ -1,7 +1,15 @@
 <template>
   <div>
+    <section>
+      <h2>Descubre lugares espectatulares </h2>
+    </section>
+    <v-row dense>
+    <v-col
+     v-for="card in cards"
+          :key="card.title"
+          :cols="card.flex"
+        >
     <section class="web-inner">
-      <h2>Home</h2>
       <template
         v-for="card in cards"
       >
@@ -35,12 +43,28 @@
               rounded
               text
             >
-              Button
+              Añadir
             </v-btn>
+             <v-btn
+              outlined
+              rounded
+              text
+            >
+              Eliminar
+            </v-btn>
+            <v-spacer></v-spacer>
+            <v-btn icon>
+                <v-icon>share</v-icon>
+              </v-btn>
+            <v-btn icon>
+                <v-icon>star</v-icon>
+              </v-btn>
           </v-card-actions>
         </v-card>
       </template>
     </section>
+     </v-col>
+    </v-row>
   </div>
 </template>
 

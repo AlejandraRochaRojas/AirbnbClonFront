@@ -1,4 +1,6 @@
 <template>
+  <v-container>
+    <v-row justify="space-around">
   <div>
     <section class="web-inner">
       <v-form class="mx-20">
@@ -30,6 +32,8 @@
       </v-form>
     </section>
   </div>
+  </v-row>
+  </v-container>
 </template>
 
 <script src="./Login.js"></script>
