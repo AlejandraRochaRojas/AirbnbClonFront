@@ -6,7 +6,7 @@ export default {
       drawer: null,
       items: [
         { title: 'Home', icon: 'dashboard', to: '/' },
-        { title: 'About', icon: 'info', to: '/about' },
+        { title: 'Registro', icon: 'info', to: '/registro' },
         { title: 'Login', icon: 'lock', to: '/login' }
       ]
     }
